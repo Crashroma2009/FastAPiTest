@@ -16,7 +16,30 @@ class Company(BaseModel):
     user_id: int
 
 
+class UserCreate(User):
+    first_name: str
+    last_name: str
+    age: int
+    sity: str
 
 
+class CompanyCreate(Company):
+    name: str
+    department: str
+    user_id: int
 
 
+class UserUpdate(User):
+    pass
+
+
+class CompanyUpdate(Company):
+    pass
+
+
+class UserInDB(User):
+    pass
+
+
+class Company(Company):
+    pass
