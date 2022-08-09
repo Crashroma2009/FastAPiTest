@@ -61,31 +61,12 @@ class BaseActions(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
 
 class PostActionsUser(BaseActions[User, schemas.UserCreate, schemas.UserUpdate]):
     """Post actions with basic CRUD operations"""
-
     pass
 
-class PostActionsCompany(BaseActions[Company, schemas.CompanyCreate, schemas.CompanyUpdate]):
 
+class PostActionsCompany(BaseActions[Company, schemas.CompanyCreate, schemas.CompanyUpdate]):
     pass
 
 
 post_user = PostActionsUser(User)
 post_company = PostActionsCompany(Company)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
